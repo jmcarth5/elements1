@@ -1,0 +1,32 @@
+body {
+	overflow-x: hidden;
+}
+
+h1 { color: red;
+	font-size: 150pt;
+    font-weight: 400pt; 
+    font-style:italic;
+    animation-name: move-block;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate-reverse;
+    text-align: center;
+    
+}
+
+h2 {color: limegreen;
+	font-weight: bolder;
+	font-size: 5em;
+
+	}
+@keyframes move-block{
+	from{ transform: scale(1);
+		transform-position: center;}
+
+	to{ 
+		color: yellow;
+		transform: scale(1.5);
+		transform-position: center;
+	
+		}
